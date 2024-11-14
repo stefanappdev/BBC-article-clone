@@ -8,4 +8,98 @@ box-sizing:border-box;
 }
 
 
+/*sm to md screens*/
+@media screen and (min-width:350px) and (max-width:600px){
 
+ul{
+	list-style-type:none;
+}
+
+#nav-bar{
+	display:none;
+}
+
+#header{
+	display:flex;
+	justify-content:space-evenly;
+	padding:5px 0 5px 5px;
+	align-items:center;
+	margin: 10px;
+	border-bottom:collapse;
+}
+
+
+#content-grid{
+	display:none;
+}
+
+#signup-form{
+	display:flex;
+	flex-direction:column;
+	width:85%;
+	align-items:center;
+	justify-content:center;
+	margin:30px;
+	padding:15px;
+	
+}
+
+
+#header h1{
+	text-align:center;
+}
+
+#header-img{
+    height:50px;
+	width:50px;
+	
+}
+
+#dropdown-nav{
+	display:inline-block;
+}
+
+#dropdown-nav img{
+	height:50px;
+	width:50px;
+}	
+
+
+ #dropdown-content{
+	display:none;
+	position:absolute;
+}
+
+#dropdown-nav:hover #dropdown-content{
+	display:block;
+	background-color:pink;
+	min-width:250px;
+	
+}
+
+
+
+#main-content{
+	margin: 10px;
+}
+
+
+footer{
+	border-top:0.5px solid black;
+	margin: 10px;
+}
+
+
+footer ul{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+}
+
+
+footer>ul li{
+	
+		margin: 0px 5px 0px 5px;
+}
+	
+}
