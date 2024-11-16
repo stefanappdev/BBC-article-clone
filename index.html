@@ -31,9 +31,6 @@
 			</nav>
 			
 			
-			
-			
-			
 			<nav id="dropdown-nav">
 			
 				<img alt="dropdown-menu" src="https://www.svgrepo.com/show/532203/menu-alt-1.svg">
@@ -65,42 +62,44 @@
 	
 		<div id="content-grid"></div>
 			
-						
-						<form id="signup-form">
-							<h2>Attend a free class</h2>
-							<span>* Available at participating studios and local residents only</span>
-							<br>
+						<div class="form-container">
+							<form id="form" class="signup-form">
+								<h2>Attend a free class</h2>
+								<span>* Available at participating studios and local residents only</span>
+								<br>
+								
+								<div>
+									<label for="firstname">Firstname:</label>
+									<input type="text" name="firstname" id="firstname" placeholder="Enter your firstname">
+								</div>
+								
+								<br>
+								
+								<div>
+									<label for="lastname">Lastname:</label>
+									<input id="lastname" name="lastname" type="text" placeholder="Enter your lastname">
+								</div>
+								
+								<br>
+								
+								<div>
+									<label for="email">email:</label>
+									<input id="email" name="email" type="email" placeholder="Enter your email">
+								</div>
+								
+								<br>
+								
+								<div>
+									<label for="phone">phone:</label>
+									<input name="phone" id="phone" type="text" placeholder="Enter your phone number">
+								</div>
+								
+								<br>
+								
+								<input name="submit-btn" type="submit">
+							</form>
 							
-							<div>
-								<label for="firstname">Firstname:</label>
-								<input type="text" placeholder="Enter your firstname">
-							</div>
-							
-							<br>
-							
-							<div>
-								<label for="lastname">Lastname:</label>
-								<input type="text" placeholder="Enter your lastname">
-							</div>
-							
-							<br>
-							
-							<div>
-								<label for="email">email:</label>
-								<input type="email" placeholder="Enter your email">
-							</div>
-							
-							<br>
-							
-							<div>
-								<label for="phone">phone:</label>
-								<input type="text" placeholder="Enter your phone number">
-							</div>
-							
-							<br>
-							
-							<input type="submit">
-						</form>
+						</div>
 						
 						<div id="home"></div>
 						<div id="contact"></div>
@@ -109,7 +108,9 @@
 	</main>	 
 
 
-		<footer id="page-footer">
+		
+
+<footer id="page-footer">
 
 		<ul> 
 			<li>@2024 Fitness Tigers </li>
@@ -118,8 +119,15 @@
 			<li>cookie policy</li>
 			
 		</ul>
+		
+		<p id="footer-name">Done by Stefan Mitchell</p>
+</footer>
 
-	</footer>
+
+</body>
 
 
-</body></html>
+
+
+
+</html>

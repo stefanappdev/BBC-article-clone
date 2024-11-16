@@ -24,8 +24,13 @@ ul{
 	justify-content:space-evenly;
 	padding:5px 0 5px 5px;
 	align-items:center;
-	margin: 10px;
-	border-bottom:collapse;
+	background-color:#f97e24;
+	border:collapse;
+	
+}
+
+#header>h1{ 
+	color:white;
 }
 
 
@@ -33,14 +38,18 @@ ul{
 	display:none;
 }
 
-#signup-form{
+
+.signup-form{
 	display:flex;
 	flex-direction:column;
-	width:85%;
+	width:80%;
 	align-items:center;
 	justify-content:center;
-	margin:30px;
+	margin:30px auto 30px auto;
+	height:90%;
 	padding:15px;
+	border-radius:10px;
+	background-color:f7f1ed;
 	
 }
 
@@ -80,13 +89,20 @@ ul{
 
 
 #main-content{
-	margin: 10px;
+
+	background-image:url("https://img.freepik.com/premium-photo/man-demonstrating-back-press-exercise-with-barbell-gym-fitness-back-pain-hands-man-gym-training-with-muscle-ai-generated_538213-23771.jpg");
+	background-size:cover;
+	height:100%;
+	padding:50px;
+	
 }
 
 
 footer{
 	border-top:0.5px solid black;
-	margin: 10px;
+	padding:25px;
+	background-color:#f97e24;
+
 }
 
 
@@ -94,12 +110,20 @@ footer ul{
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:space-evenly;
+	margin-bottom:10px;
 }
 
 
 footer>ul li{
 	
-		margin: 0px 5px 0px 5px;
+		margin: 10px;
+		font-weight:bold;
+}
+
+#footer-name{
+	margin-top:10px;
+	font-weight:bold;
+	text-align:right;
 }
 	
 }
