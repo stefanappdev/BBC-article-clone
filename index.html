@@ -82,40 +82,41 @@ Book your first class now, and let's #pulltogether!</p>
 								<span class="promo">* Available at participating studios and local residents only</span>
 								
 								
-								<div>
-									<label for="firstname">Firstname:</label>
+								
+									<label for="firstname">Firstname:
 									<input class="form-input" type="text" name="firstname" id="firstname" placeholder="Enter your firstname">
-								     <br>
-									<span class="errs" id="firstnameErr"></span>
-								</div>
+									</label>
+									<p class="errs" id="firstnameErr"></p>
 								
 								
 								
 								
-								<div>
-									<label for="lastname">Lastname:</label>
-									<input class="form-input"  id="lastname" name="lastname" type="text" placeholder="Enter your lastname">
-									 <br>
-									<span class="errs" id="lastnameErr"></span>
-								</div>
+								
+								
+									<label for="lastname">Lastname:
+										<input class="form-input "  id="lastname" name="lastname" type="text" placeholder="Enter your lastname">
+									</label>
+									<p class="errs" id="lastnameErr"></p>
+								
 								
 							
 								
 				
-								<div>
-									<label for="phone">phone:</label>
-									<input class="form-input"  name="phone" id="phone" type="text" placeholder="Enter your phone number">
-									 <br>
-									 <span class="errs" id="phoneErr"></span>
-								</div>
+								
+									<label for="phone">phone:
+										<input class="form-input "  name="phone" id="phone" type="text" placeholder="Enter your phone number">
+									</label>
+									 <p class="errs" id="phoneErr"></p>
 								
 								
 								
-							 <div>
-									<label for="email">email:</label>
-									<input class="form-input"  id="email" name="email" type="email" placeholder="Enter your email">
-									<span class="errs" id="emailErr"></span>
-								</div>
+								
+							 
+									<label for="email">email:
+									<input class="form-input "  id="email" name="email" type="email" placeholder="Enter your email">
+									</label>
+									<p class="errs" id="emailErr"></p>
+								
 								
 								
 								<input id="submit"  name="submit-btn" type="submit">
@@ -152,41 +153,41 @@ Book your first class now, and let's #pulltogether!</p>
 				
 				if (!nameRgx.test(event.target.firstname.value)){
 						err_firstname.textContent="This field cannot be blank";
-						event.target.firstname.style.backgroundColor="pink";
+						event.target.firstname.classList.add("danger");
 						toSubmit=false;
 				}
 				else{
 				
 					err_firstname.textContent="";
-					event.target.firstname.style.backgroundColor="white";
+					event.target.firstname.classList.remove("danger");
 				}
 				
 				if (!nameRgx.test(event.target.lastname.value)){
 						err_lastname.textContent="This field cannot be blank";
-						event.target.lastname.style.backgroundColor="pink";
+						event.target.lastname.classList.add("danger");
 						toSubmit=false;
 				}else{
-					err_lastname.textContent="";
-					event.target.lastname.style.backgroundColor="white";
+					err_lastname.textContent=""
+					event.target.lastname.classList.remove("danger");
 				}
 				
 				if (!phoneRgx.test(event.target.phone.value)){
 				
-					err_phone.textContent="please re-enter your phone number";
-						event.target.phone.style.backgroundColor="pink";
+					err_phone.textContent="please enter your phone number";
+						event.target.phone.classList.add("danger");
 						toSubmit=false;
 				}else{
 						err_phone.textContent="";
-						event.target.phone.style.backgroundColor="white";
+						event.target.phone.classList.remove("danger");
 				}
 				
 				if (!emailRgx.test(event.target.email.value)){
 						err_email.textContent="please enter an email";
-						event.target.email.style.backgroundColor="pink";
+						event.target.email.classList.add("danger");
 						toSubmit=false;
 				}else{
 					
-						event.target.email.style.backgroundColor="white";
+						event.target.email.classList.remove("danger");
 						err_email.textContent="";
 				}
 				

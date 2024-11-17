@@ -10,6 +10,19 @@ box-sizing:border-box;
 
 .errs{
 	color:red;
+	margin:1px 0 1px 0;
+	
+}
+.danger{
+	border:1px solid red;
+	
+}
+
+
+
+.form-input:focus{
+	background-color:#a4cbc5;
+
 }
 
 
@@ -54,14 +67,15 @@ ul{
 .signup-form{
 	display:flex;
 	flex-direction:column;
-	width:100%;
+	max-width:100%;
 	align-items:center;
 	justify-content:center;
-	margin:30px auto 30px auto;
-	height:100%;
+	margin:20px auto 20px auto;
+	max-height:520px;
 	padding:15px;
 	border-radius:10px;
 	background-color:f7f1ed;
+	
 	
 }
 
@@ -116,7 +130,7 @@ ul{
 
 	background-image:url("https://img.freepik.com/premium-photo/man-demonstrating-back-press-exercise-with-barbell-gym-fitness-back-pain-hands-man-gym-training-with-muscle-ai-generated_538213-23771.jpg");
 	background-size:cover;
-	height:100%;
+	height:110%;
 	padding:50px;
 	margin-bottom:0;
 }
@@ -126,6 +140,7 @@ ul{
 #form h2,.promo{
 	text-align:center;
 	margin: 10px 0 10px 0;
+	
 }
 
 #form label{
@@ -134,14 +149,12 @@ ul{
 
 .form-input {
 	margin:20px 0 20px 0 ;
+	width:200px;
 	height:25px;
+	border-radius:5px;
 	
 }
 
-.form-input:focus{
-	background-color:#e6f9f9;
-
-}
 
 
 #form [type='submit'] {
@@ -197,7 +210,7 @@ footer>ul li{
 
 
 /* md to lg screens*/
-@media screen and (min-width:600px) and (max-width:750px){
+@media screen and (min-width:601px) and (max-width:750px){
 	
 	
 	ul{
@@ -232,12 +245,12 @@ footer>ul li{
 .signup-form{
 	display:flex;
 	flex-direction:column;
-	width:100%;
+	max-width:400px;
 	align-items:center;
 	justify-content:center;
 	margin:30px auto 60px auto;
-	height:100%;
-	padding:15px;
+	max-height:500px;
+	padding:10px;
 	border-radius:10px;
 	background-color:f7f1ed;
 	
@@ -294,7 +307,7 @@ footer>ul li{
 
 	background-image:url("https://img.freepik.com/premium-photo/man-demonstrating-back-press-exercise-with-barbell-gym-fitness-back-pain-hands-man-gym-training-with-muscle-ai-generated_538213-23771.jpg");
 	background-size:cover;
-	height:100%;
+	height:110%;
 	padding:50px;
 	margin-bottom:0;
 	
@@ -314,13 +327,11 @@ footer>ul li{
 .form-input {
 	margin:20px 0 20px 0 ;
 	height:25px;
+	border-radius:5px;
 	
 }
 
-.form-input:focus{
-	background-color:#e6f9f9;
 
-}
 
 
 #form [type='submit'] {
@@ -339,6 +350,7 @@ footer{
 	padding:20px;
 	background-color:#f97e24;
 	border:collapse;
+	
 
 }
 
@@ -374,7 +386,7 @@ footer>ul li{
 
 
 /* lg screens*/
-@media screen and (min-width:750px){
+@media screen and (min-width:751px){
 	
 	
 	ul{
@@ -477,7 +489,6 @@ footer>ul li{
 
 	background-image:url("https://img.freepik.com/premium-photo/man-demonstrating-back-press-exercise-with-barbell-gym-fitness-back-pain-hands-man-gym-training-with-muscle-ai-generated_538213-23771.jpg");
 	background-size:cover;
-	height:100%;
 	width:100%;
 	padding:20px;
 	display:grid;
@@ -490,15 +501,17 @@ footer>ul li{
 .signup-form{
 	display:flex;
 	flex-direction:column;
-	width:100%;
+	max-width:100%;
 	align-items:center;
 	justify-content:center;
 	margin:30px auto 50px auto;
-	height:90%;
+	max-height:90%;
 	padding:15px;
 	border-radius:10px;
 	background-color:f7f1ed;
 	grid-column:2;
+	
+	
 }
 
 #statement{
@@ -534,14 +547,12 @@ footer>ul li{
 
 .form-input {
 	margin:20px 0 20px 0 ;
-	height:25px;
+	height:30px;
+	width:350px;
+	border-radius:5px;
 	
 }
 
-.form-input:focus{
-	background-color:#e6f9f9;
-
-}
 
 
 #form [type='submit'] {
@@ -560,7 +571,6 @@ footer{
 	padding:20px;
 	background-color:#f97e24;
 	border:collapse;
-
 }
 
 
