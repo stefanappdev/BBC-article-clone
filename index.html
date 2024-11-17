@@ -40,14 +40,18 @@
 						<li>Home</li>
 					</a>
 					
+					<br/>
+					
 					<a class="nav-link" href="#about">
 						<li>About Us</li>
 					</a>
 					
+					<br/>
+					
 					<a class="nav-link" href="#contact">
 						<li>Contact</li>
 					</a>
-					
+					<br/>
 					
 				</ul>
 			
@@ -60,46 +64,64 @@
 	<main id="main-content">	
 	
 	
-		<div id="content-grid"></div>
+		<div id="statement">
+		<h1>First Class Free</h1>
+<p>Join us for a full-body workout that combines low-impact cardio, 
+strength training, stretching, and rhythm-based rowing. </p>
+<p>Whether you're new to rowing or an experienced group fitness pro, 
+Our classes are designed to elevate your fitness level on and off the wild.</p>
+<p>Plus, you'll be welcomed into the Crew – 
+a vibrant community of motivating coaches and energetic members who will ignite your passion and drive you to crush your goals. 
+Book your first class now, and let's #pulltogether!</p>
+
+</div>
 			
-						<div class="form-container">
-							<form id="form" class="signup-form">
+						
+							<form id="form" action="https://www.freecodecamp.com/email-submit" method="POST" class="signup-form">
 								<h2>Attend a free class</h2>
-								<span>* Available at participating studios and local residents only</span>
-								<br>
+								<span class="promo">* Available at participating studios and local residents only</span>
+								
 								
 								<div>
 									<label for="firstname">Firstname:</label>
-									<input type="text" name="firstname" id="firstname" placeholder="Enter your firstname">
+									<input class="form-input" type="text" name="firstname" id="firstname" placeholder="Enter your firstname">
+								     <br>
+									<span class="errs" id="firstnameErr"></span>
 								</div>
 								
-								<br>
+								
+								
 								
 								<div>
 									<label for="lastname">Lastname:</label>
-									<input id="lastname" name="lastname" type="text" placeholder="Enter your lastname">
+									<input class="form-input"  id="lastname" name="lastname" type="text" placeholder="Enter your lastname">
+									 <br>
+									<span class="errs" id="lastnameErr"></span>
 								</div>
 								
-								<br>
+							
 								
-								<div>
-									<label for="email">email:</label>
-									<input id="email" name="email" type="email" placeholder="Enter your email">
-								</div>
-								
-								<br>
-								
+				
 								<div>
 									<label for="phone">phone:</label>
-									<input name="phone" id="phone" type="text" placeholder="Enter your phone number">
+									<input class="form-input"  name="phone" id="phone" type="text" placeholder="Enter your phone number">
+									 <br>
+									 <span class="errs" id="phoneErr"></span>
 								</div>
 								
-								<br>
 								
-								<input name="submit-btn" type="submit">
+								
+							 <div>
+									<label for="email">email:</label>
+									<input class="form-input"  id="email" name="email" type="email" placeholder="Enter your email">
+									<span class="errs" id="emailErr"></span>
+								</div>
+								
+								
+								<input id="submit"  name="submit-btn" type="submit">
 							</form>
 							
-						</div>
+							
 						
 						<div id="home"></div>
 						<div id="contact"></div>
@@ -107,9 +129,82 @@
 			
 	</main>	 
 
-
+	<script>
+	
+		let form=document.querySelector("#form");
 		
-
+		let err_phone=document.querySelector("#phoneErr");
+		let err_lastname=document.querySelector("#lastnameErr");
+		let err_firstname=document.querySelector("#firstnameErr");
+		let err_email=document.querySelector("#emailErr");
+		
+		
+		
+		
+		form.addEventListener("submit",(event)=>{
+				event.preventDefault();
+				let nameRgx=/[A-Za-z]{3,30}/
+				let phoneRgx=/\+?\(?[\d]+\)?[\d]{7,9}/
+				let emailRgx=/[\w]+\@[\w]+/
+				let toSubmit=true;
+				
+				
+				
+				if (!nameRgx.test(event.target.firstname.value)){
+						err_firstname.textContent="This field cannot be blank";
+						event.target.firstname.style.backgroundColor="pink";
+						toSubmit=false;
+				}
+				else{
+				
+					err_firstname.textContent="";
+					event.target.firstname.style.backgroundColor="white";
+				}
+				
+				if (!nameRgx.test(event.target.lastname.value)){
+						err_lastname.textContent="This field cannot be blank";
+						event.target.lastname.style.backgroundColor="pink";
+						toSubmit=false;
+				}else{
+					err_lastname.textContent="";
+					event.target.lastname.style.backgroundColor="white";
+				}
+				
+				if (!phoneRgx.test(event.target.phone.value)){
+				
+					err_phone.textContent="please re-enter your phone number";
+						event.target.phone.style.backgroundColor="pink";
+						toSubmit=false;
+				}else{
+						err_phone.textContent="";
+						event.target.phone.style.backgroundColor="white";
+				}
+				
+				if (!emailRgx.test(event.target.email.value)){
+						err_email.textContent="please enter an email";
+						event.target.email.style.backgroundColor="pink";
+						toSubmit=false;
+				}else{
+					
+						event.target.email.style.backgroundColor="white";
+						err_email.textContent="";
+				}
+				
+				
+				
+				/*if(toSubmit){
+				
+					document.querySelector("#success").textContent="Form Submission Sucessful";
+				}*/
+				
+		});
+		
+		
+	
+		
+	
+	</script>
+		
 <footer id="page-footer">
 
 		<ul> 
