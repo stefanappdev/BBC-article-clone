@@ -56,6 +56,10 @@ ul{
 	align-items:center;
 	background-color:#f97e24;
 	border:collapse;
+	position:fixed;
+	width:100%;
+	top:0;
+	left:0;
 	
 }
 
@@ -238,7 +242,10 @@ footer>ul li{
 	align-items:center;
 	background-color:#f97e24;
 	border:collapse;
-	
+	position:fixed;
+	width:100%;
+	top:0;
+	left:0;
 }
 
 #header>h1{ 
@@ -429,6 +436,10 @@ footer>ul li{
 	align-items:center;
 	background-color:#f97e24;
 	border:collapse;
+	position:fixed;
+	width:100%;
+	top:0;
+	left:0;
 	
 }
 
