@@ -8,8 +8,6 @@ box-sizing:border-box;
 }
 
 
-<<<<<<< HEAD
-=======
 .errs{
 	color:red;
 	margin:1px 0 1px 0;
@@ -35,7 +33,6 @@ box-sizing:border-box;
 	margin:0;
 }
 
->>>>>>> Dev
 /*sm to md screens*/
 @media screen and (min-width:350px) and (max-width:600px){
 
@@ -47,38 +44,16 @@ ul{
 	display:none;
 }
 
-<<<<<<< HEAD
-=======
 
 #video{
 	display:none;
 }
 
->>>>>>> Dev
 #header{
 	display:flex;
 	justify-content:space-evenly;
 	padding:5px 0 5px 5px;
 	align-items:center;
-<<<<<<< HEAD
-	margin: 10px;
-	border-bottom:collapse;
-}
-
-
-#content-grid{
-	display:none;
-}
-
-#signup-form{
-	display:flex;
-	flex-direction:column;
-	width:85%;
-	align-items:center;
-	justify-content:center;
-	margin:30px;
-	padding:15px;
-=======
 	background-color:#f97e24;
 	border:collapse;
 	position:fixed;
@@ -111,7 +86,6 @@ ul{
 	border-radius:10px;
 	background-color:f7f1ed;
 	
->>>>>>> Dev
 	
 }
 
@@ -139,21 +113,14 @@ ul{
  #dropdown-content{
 	display:none;
 	position:absolute;
-<<<<<<< HEAD
-=======
 	border-radius:10px;
 	right:15px;
 	padding:5px;
 	
->>>>>>> Dev
 }
 
 #dropdown-nav:hover #dropdown-content{
 	display:block;
-<<<<<<< HEAD
-	background-color:pink;
-	min-width:250px;
-=======
 	background-color:eae8e7;
 	min-width:100px;
 	box-shadow: 5px 5px black;
@@ -195,22 +162,11 @@ ul{
 	width:200px;
 	height:25px;
 	border-radius:5px;
->>>>>>> Dev
 	
 }
 
 
 
-<<<<<<< HEAD
-#main-content{
-	margin: 10px;
-}
-
-
-footer{
-	border-top:0.5px solid black;
-	margin: 10px;
-=======
 #form [type='submit'] {
 
 	width:100%;
@@ -229,7 +185,6 @@ footer{
 	border:collapse;
 	
 
->>>>>>> Dev
 }
 
 
@@ -237,21 +192,12 @@ footer ul{
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:space-evenly;
-<<<<<<< HEAD
-=======
 	margin-bottom:10px;
->>>>>>> Dev
 }
 
 
 footer>ul li{
 	
-<<<<<<< HEAD
-		margin: 0px 5px 0px 5px;
-}
-	
-}
-=======
 		margin: 10px;
 		font-weight:bold;
 		color:white;
@@ -679,5 +625,3 @@ footer>ul li{
 
 }
 }
-
->>>>>>> Dev
