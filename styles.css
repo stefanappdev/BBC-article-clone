@@ -26,6 +26,7 @@ box-sizing:border-box;
 }
 
 
+
 #home,#contact,#about{
 	display:none;
 	padding:0;
@@ -40,6 +41,11 @@ ul{
 }
 
 #nav-bar{
+	display:none;
+}
+
+
+#video{
 	display:none;
 }
 
@@ -212,6 +218,10 @@ footer>ul li{
 /* md to lg screens*/
 @media screen and (min-width:601px) and (max-width:750px){
 	
+	
+#video{
+	display:none;
+}	
 	
 	ul{
 	list-style-type:none;
@@ -494,23 +504,29 @@ footer>ul li{
 	display:grid;
 	margin-bottom:0;
 	grid-template-columns:repeat(2,minmax(200px,1fr));
-	
-	
-	
 }
+
+
 .signup-form{
 	display:flex;
 	flex-direction:column;
 	max-width:100%;
 	align-items:center;
 	justify-content:center;
-	margin:30px auto 50px auto;
+	margin:25px auto 50px auto;
 	max-height:90%;
 	padding:15px;
 	border-radius:10px;
 	background-color:f7f1ed;
 	grid-column:2;
 	
+	
+}
+
+
+#video{
+	margin:10px auto 10px auto;
+	grid-column:1/2;
 	
 }
 
